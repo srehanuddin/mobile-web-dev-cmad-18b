@@ -1,10 +1,105 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
 
-	a
+        <style>
+        
+            .myClass {
+                background: red;    
+            }
+        
+        </style>
+    </head>
+    <body>
 
-	
-	
-	
-	
-	b
+        <div id="myDIV"></div>
+
+        <div id="myID" class="myClass myClass1" style="color: blue" myname="Rehan" >
+            <h1 class="" id="" style="" ></h1>
+            <h2></h2>
+            <h3></h3>
+            <h4></h4>
+            <div></div>
+            <p></p>
+            <span></span>
+            <img src="" alt="" width="100" height="100" />
+
+            <input type="text" name="" value="" />
+
+
+            <table id="mytable">
+                <tr><td>1</td><td><button dataid="1" onclick="deleteRow(1)">Delete</button></td></tr>
+                <tr><td>2</td><td><button dataid="2" onclick="deleteRow(2)">Delete</button></td></tr>
+                <tr><td>3</td><td><button dataid="3" onclick="deleteRow(3)">Delete</button></td></tr>
+                <tr><td>4</td><td><button dataid="4" onclick="deleteRow(4)">Delete</button></td></tr>
+                <tr><td>5</td><td><button dataid="5" onclick="deleteRow(5)">Delete</button></td></tr>
+            </table>
+        </div>
+
+        <div id="myDIV"></div>
+
+        <rehan>
+            Rehan Component
+        </rehan>
+
+
+        <script>
+
+            var myDivClass = document.getElementById('myID').getAttribute('class')
+            var myDivID = document.getElementById('myID').getAttribute('id')
+            var myDivStyle = document.getElementById('myID').getAttribute('style')
+            var myDivMyName = document.getElementById('myID').getAttribute('myname')
+            console.log(myDivClass);
+            console.log(myDivID);
+            console.log(myDivStyle);
+            console.log(myDivMyName);
+
+            document.getElementById('myID').setAttribute('class', 'class123')
+
+            var myDivAttributes = document.getElementById('myID').attributes;
+            console.log(myDivAttributes);
+
+
+            var list = [
+                1, 
+                2, 
+                3,
+                4,
+                5
+            ]
+
+            function deleteRow(index){
+
+            }
+
+
+            var html = "<div><span>Rehan</span></div>"
+
+
+            var newDiv = document.createElement('div');
+            newDiv.setAttribute("class", "myClass");
+
+            var newSpan = document.createElement('span');
+            // newSpan.onclick = function(){
+            //     alert("Click on Span");
+            // }
+
+            var newText = document.createTextNode("Click Here");
+            
+            newSpan.appendChild(newText);
+            newDiv.appendChild(newSpan);
+
+            var myDIV = document.getElementById('myDIV');
+
+            myDIV.appendChild(newDiv);
+
+
+
+        
+        </script>
+    </body>
 </html>
