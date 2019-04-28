@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <style>
+        
+            .myClass {
+                background: red;    
+            }
+        
+        </style>
+    </head>
+    <body>
+
+        <div id="myDIV"></div>
+
+        <div id="myID" class="myClass myClass1" style="color: blue" myname="Rehan" >
+            <h1 class="" id="" style="" ></h1>
+            <h2></h2>
+            <h3></h3>
+            <h4></h4>
+            <div></div>
+            <p></p>
+            <span></span>
+            <img src="" alt="" width="100" height="100" />
+
+            <input type="text" name="" value="" />
+
+
+            <table id="mytable">
+                <tr><td>1</td><td><button dataid="1" onclick="deleteRow(1)">Delete</button></td></tr>
+                <tr><td>2</td><td><button dataid="2" onclick="deleteRow(2)">Delete</button></td></tr>
+                <tr><td>3</td><td><button dataid="3" onclick="deleteRow(3)">Delete</button></td></tr>
+                <tr><td>4</td><td><button dataid="4" onclick="deleteRow(4)">Delete</button></td></tr>
+                <tr><td>5</td><td><button dataid="5" onclick="deleteRow(5)">Delete</button></td></tr>
+            </table>
+        </div>
+
+        <div id="myDIV"></div>
+
+        <rehan>
+            Rehan Component
+        </rehan>
+
+
+        <script>
+
+            
+
+            // var a = "Rehan"
+
+            // var b = [1,2,3,4];
+            // b[1]
+
+            // b[2] = 1
+
+            // var b = [1,2,3,4];
+
+            // var human1name = "Rehan";
+            // var human1work = "Teaching"
+            // var human1age = 28;
+
+            // var human2name = "Taha";
+            // var human2work = "Job";
+            // var human2age = 26;
+
+            // var human1 = [
+            //     "Rehan",
+            //     "Teaching",
+            //     28
+            // ]
+
+            // var human2 = [
+            // "Job",
+            //     "Taha",                
+            //     26
+            // ]
+
+            // // var human1Obj = [];
+            // // human1Obj['name'] = "Rehan";
+            // // human1Obj['work'] = "Teaching";
+            // // human1Obj['age'] = "28";
+
+
+            // var humanArr = [
+            //     "Rehan",
+            //     "Teaching",
+            //     28
+            // ]
+            // //humanArr[0] = "A"
+            // humanArr[0]
+            // humanArr[1]
+            // humanArr[2]
+            // humanArr[3] = "Test";
+            // humanArr[3]
+
+
+            // var human1Obj = {
+            //     name : "Rehan",
+            //     age : 28,
+            //     work : "Teaching",
+            //     skill : [1,2,3],
+            //     a : true,
+            //     b : undefined,
+            //     c : null,
+            //     d : {
+            //         a : 1,
+            //         b : {
+            //             a : 100
+            //         }
+
+            //     }
+            // }
+            // human1Obj.d.a.b.a;
+            // human1Obj.subject = "English";
+            // human1Obj.name = "Taha";
+            // human1Obj.age;
+
+            // human1Obj.skills = ["HTML", "CSS"]
+
+            // human1Obj.skill[0]
+
+            // for(var i =  human1Obj.skill.length; i > -1; i--){
+            //     human1Obj.skill[i];
+            // }
+
+
+
+            // var a = 1;
+            // var a = true;
+            // var a = "sdasdasd";
+            // var a = [1,2,3];
+            // var a = { name : "rehan"};
+            // var a = function(){};
+            // var a = null;
+            // var a = undefined;
+
+            // var fn = function(){};
+            // fn();
+
+            // function addRow(){
+
+            // }
+            // var myFn = addRow;
+            // addRow();
+            // myFn();
+
+            // var a = [
+            //     true,
+            //     "asdas",
+            //    function(){},
+            //     [1,2,[1,2,[1,2,3]]],
+            //     2,
+            //     3
+            // ];
+
+            // a[0];
+            // a[1];
+            // a[2]();
+
+            // a[2]()
+
+            // var arr = [
+            //     [1,2,3],
+            //     [4,5,6],
+            //     [7,8,9]
+            // ]
+
+
+
+
+            // var a = 1;
+            // var fn = function(){};
+            // a
+            // fn()
+
+            // var arr = [
+            //     1,
+            //     2,
+            //     function(){}
+            // ]
+
+            // arr[2]()
+
+
+            // // var car = "Honda"
+
+            // // function teaching(){
+
+            // // }
+
+            // // teaching(car);
+
+
+
+            // var h1 = {
+            //     name : "Rehan",
+            //     age : 28,
+            //     teaching: function(){
+            //         console.log(h1.name + " is teaching");
+            //     }
+            // }
+
+            // var car1Obj = {
+            //     name : "Honda"
+            // }
+
+            // function teaching(){
+            //     console.log(car1Obj.name + " is teaching");
+            // }
+
+            // teaching();
+
+
+
+
+            // var h1 = {
+            //     name : "Rehan",
+            //     age : 28,
+            //     teaching: function(){
+            //         console.log(h1.name + " is teaching");
+            //     }
+            // }
+
+            // var h2 = {
+            //     name : "Taha",
+            //     age : 28,
+            //     teaching: function(){
+            //         console.log(h2.name + " is teaching");
+            //     }
+            // }
+
+            // var car1Obj = {
+            //     name : "Honda"
+            // }
+
+            // h1.teaching();
+            // h2.teaching();
+
+
+
+
+
+            // var h1 = {
+            //     name : "Rehan",
+            //     age : 28,
+            //     teaching: function(){
+            //         console.log(this.name + " is teaching");
+            //     },
+            //     print: function(){
+            //         this.teaching();
+            //     }
+            // }
+
+            // var h2 = {
+            //     name : "Taha",
+            //     age : 28,
+            //     teaching: function(){
+            //         console.log(this.name + " is teaching");
+            //     }
+            // }
+
+            // var h3 = {
+            //     name : "ABC",
+            //     age : 28,
+            //     teaching: function(){
+            //         console.log(this.name + " is teaching");
+            //     }
+            // }
+
+            // var car1Obj = {
+            //     name : "Honda"
+            // }
+
+            // h1.print();
+            // //h2.teaching();
+            // //h3.teaching();
+
+
+            var h1 = {};
+            var h2 = {};
+            var h3 = {};
+            var h4 = {};
+            var h5 = {};
+            var h6 = {};
+            var h7 = {};
+            var h8 = {};
+            var h9 = {};
+            var h10 = {};
+
+            var employees = [
+                {
+                    name: "A",
+                    salary: 1465,
+                    occupation: "engineer"
+                },
+                {
+                    name: "B"
+                },
+                {
+                    name: "C"
+                }, 
+                {
+                    name: "D"
+                }
+            ]
+
+            for(var i = 0; i < employees.length; i++){
+                console.log(employees[i].name);
+            }
+
+        
+        </script>
+    </body>
+</html>
