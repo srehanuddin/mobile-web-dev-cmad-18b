@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <style>
+    
+        
+        </style>
+    </head>
+    <body>
+
+        <button id="myButton">Test</button>
+
+        <script>
+
+            // var a = document.getElementById('myButton')
+            // var op = 1;
+            // var int = setInterval(function(){
+            //     if(op <= 0){ 
+            //         clearInterval(int) 
+            //     }
+            //     else { 
+            //         op -= 0.1;
+            //         a.style.opacity = op;
+            //     }
+            // }, 100)
+        
+            // var user1 = {
+            //     name : "Rehan",
+            //     working : function(){
+            //         console.log(this.name + " is working")
+            //     }
+            // }
+
+            // var user2 = {
+            //     name : "User 2",
+            //     working : function(){
+            //         console.log(this.name + " is working")
+            //     }
+            // }
+
+            // var user3 = {
+            //     name : "User 3",
+            //     working : function(){
+            //         console.log(this.name + " is working")
+            //     }
+            // }
+
+            // var arr = [
+            //     { name : "Rehan"},
+            //     {},
+            //     {}
+            // ]
+            // arr[0].name
+
+            // var users = [
+            //     user1, user2, user3
+            // ]
+
+            // var aa = "Rehan";
+
+            // var dict = {
+            //     a : "b",
+
+
+            // }
+
+            // function encrypt(msg){
+            //     return encryptedMsg;
+            // }
+            // function decrypt(msg){
+            //     return originalMsg;
+            // }
+
+            // var msg = "Rehan";
+            // encMsg = encrypt(msg);
+            // encMsg //"faswq"
+            // originalMsg = decrypt(encMsg);
+            // originalMsg //Rehan 
+
+
+
+            // var obj1 = {
+            //     name : "Rehan",
+            //     age : 27,
+            //     work : "Teacher",
+            //     height : "",
+            //     dob : "",
+            //     address : "",
+            //     phone: ""
+            // }
+            // var obj2 = {
+            //     name : "Rehan",
+            //     age : 27,
+            //     work : "Teacher",
+            //     height : "",
+            //     dob : "",
+            //     address : "",
+            //     phone: ""
+            // }
+            // var obj3 = {
+            //     nam : "Rehan",
+            //     age : 27,
+            //     work : "Teacher",
+            //     height : "",
+            //     dob : "",
+            //     address : "",
+            //     phone: ""
+            // }
+
+
+            // function createObj(name, age, work){
+            //     return {
+            //         name : name,
+            //         age : age,
+            //         work : work,
+            //         height : "",
+            //         dob : "",
+            //         address : "",
+            //         phone: ""
+            //     }
+            // }
+
+            // var o1 = createObj("user 1", 21, "dev")
+            // var o2 = createObj("user 2", 21, "dev")
+            // var o3 = createObj("user 3", 21, "dev")
+            // var o4 = createObj("user 4", 21, "dev")
+
+
+            function User(n, a, w){
+                this.name = n;
+                this.age = a;
+                this.work = w;
+                this.dob = "";
+                this.height = "";
+
+                this.sleep = function(){
+                    console.log(this.name + " is sleeping");
+                }
+            }
+
+            function Car(model, brand, year, color){
+                this.model = model;
+                this.brand = brand;
+                this.year = year;
+                this.color = color;
+
+                this.forward = function(){
+                    console.log(this.brand + " " + this.model + " " + this.year + " is forwarding");
+                };
+                this.backward = function(){ 
+                    console.log(this.brand + " " + this.model + " " + this.year + " is reverse");
+                };
+                this.start = function(){ 
+                    console.log(this.brand + " " + this.model + " " + this.year + " is started");
+                };
+                this.stop = function(){
+                    console.log(this.brand + " " + this.model + " " + this.year + " is stopped");
+                };
+            }
+
+            var u1 = new User("User 1", 27, "Teacher");
+            var u2 = new User("User 2", null, "Teacher");
+            var u3 = new User("User 3", 27, "Teacher");
+            u3.subject = "English"
+
+
+            var c1 = new Car("Civic", "Honda", 2000);
+            var c2 = new Car("Corolla", "Toyota", 2000);
+            var c3 = new Car("Civic", "Honda", 2007);
+            
+            
+            c1.forward();
+            u1.sleep();
+            c2.stop();
+            c3.start();
+
+            
+
+            var uArrs1 =[
+                u1, u2, u3
+            ]
+
+            var uArrs2 = [
+            new User("User 1", 27, "Teacher"),
+            new User("User 1", 27, "Teacher"),
+            new User("User 1", 27, "Teacher"),
+            new User("User 1", 27, "Teacher")
+            ]
+
+
+            function a(){
+
+            }
+            function b(){
+
+            }
+
+
+            var Human = {
+                name : "Rehan",
+                sleep : function(){
+
+                }
+            }
+
+            function sleep(){
+
+            }
+
+
+            var object1 = {
+                name : "Rehan",
+                age : false
+            }
+
+            // if(object1.age){
+            //     console.log(true);
+            // } else {
+            //     console.log(false)
+            // }
+            if("age" in object1){
+                console.log(true);
+            } else {
+                console.log(false)
+            }
+
+
+
+            var name = "Rehan";
+
+            
+
+
+            if(name){
+                console.log(true);
+            } else {
+                console.log(false)
+            }
+
+            
+        </script>
+    
+    </body>
+</html>
