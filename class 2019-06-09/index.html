@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+<script>
+//     function imp(){
+//     let a=[1,2,3,4]
+//     let doubleNumber=[];
+// for (let x=0; x<4; x++)
+// {
+// // a[x]=a[x]*2;
+// doubleNumber.push(a[x]*2)
+// }
+// console.log(doubleNumber);
+//     }
+
+
+    function dec()
+    {
+        let a=[1,2,3,4]
+        let doubleNumber=a.map(function(a){
+            return a*2})
+        console.log(doubleNumber)
+    }
+
+    
+    function dec1()
+    {
+        let a=[1,2,3,4]
+        let doubleNumber=a.map(item =>item *2)
+        console.log(doubleNumber)
+    }
+
+
+    // function mul(a){
+    //     return a * 2;
+    // }
+    // function sum(a){
+    //     return a + 2;
+    // }
+
+    // map([1,2,3], mul);
+    // map([1,2,3], sum);
+
+    // function map(arr, cb){
+    //     let newArr = [];
+    //     for(var i = 0; i < arr.length; i++){
+    //         //let tmpval = cb(arr[i]);
+    //         // let tmpval = arr[i] * 3;
+    //         let tmpval = cb(arr[i]);
+    //         newArr.push(tmpval)
+    //     }
+    //     return newArr;
+    // }
+
+    // var a = [1,2,3,4];
+    
+    // console.log(map(a , ))
+    // console.log(map(a , (x => x + 2)))
+    // console.log(map(a , (x => x * x)))
+
+
+    //     let a=[1,2,3,4](x => x * 2)
+    //     let doubleNumber=[];
+    //     for (let x=0; x<4; x++)
+    //     {
+    //     doubleNumber.push(a[x]*2)
+    //     }
+    //     console.log(doubleNumber);
+
+        
+    //     let doubleNumber=[];
+    //     for (let x=0; x<4; x++)
+    //     {
+    //     doubleNumber.push(a[x]*3)
+    //     }
+    //     console.log(doubleNumber);
+
+        
+    //     let doubleNumber=[];
+    //     for (let x=0; x<4; x++)
+    //     {
+    //     doubleNumber.push(a[x]*4)
+    //     }
+    //     console.log(doubleNumber);
+
+
+        
+    //     let doubleNumber=[];
+    //     for (let x=0; x<4; x++)
+    //     {
+    //     doubleNumber.push(a[x]+2)
+    //     }
+    //     console.log(doubleNumber);
+
+
+    var a  =  [1,4,10,15, 90, 100];
+    
+
+    search(1,4) //Both Found
+    search(1,5) //1 Found
+    search(2,4) //4 Found
+    search(2,3) //Not Found
+
+    //Single Loop
+    //Only 1 Flag Variable
+    //Builtin methods not allowed
+
+
+
+</script>
+</html>
