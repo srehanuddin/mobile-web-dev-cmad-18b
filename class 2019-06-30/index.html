@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // function add () {
+    //     return 2 + 2
+    // }
+
+    // var result = add()
+
+    // function add (){
+    //     return function (){
+    //         return 6
+    //     }
+    // }
+
+    // var result = add()
+    // var returnValue = result()
+    // console.log(returnValue)
+
+
+    // var result = add()()
+    // console.log(result)
+
+
+    // function add (a){
+    //     return function (b){
+    //         return a + b
+    //     }
+    // }
+
+    // var addWithTwo = add(2)
+    // var addWithThree = add(3)
+
+    // console.log(addWithTwo(3)) //5, function return
+    // console.log(addWithThree(4)) // 7
+    // console.log(addWithTwo(2)) // 4
+    // console.log(addWithThree(6)) // 9
+    // console.log(addWithTwo(10)) // 12
+    // console.log(addWithTwo(8)) // 10
+    // console.log(addWithThree(1)) // 4
+    // console.log(addWithTwo(9)) // 11
+    // console.log(addWithThree(0)) // 3
+
+    // if(2 < 1)
+    //     console.log(' if work')
+    
+    // else {
+    //     console.log(' else work')
+    // }
+
+    // condition ? true : false
+
+    // 2 < 1 ? console.log("if work") : console.log("else work")
+
+    // 2 > 1 && console.log("if work")
+
+    // var name = "Ali";
+    // var myclass = 2;
+
+    // var student = "My name is " + name + ", i am in"+ 
+    //                 +"class " + myclass
+
+    // var student = `My name is ${name} ,  
+    // i m in
+    //  class ${myclass}`
+
+
+    // var student = {
+    //     name:"Arfa karim",
+    //     age:23
+    // }
+    // var student2 = student;
+    // student2.name = "abc"
+    // var student3 = Object.assign({},student)
+    // var student3 = {...student}
+    // console.log(student.name) // 
+
+    // student3.name = "abc"
+
+    // console.log(student.name)
+    // console.log(student3.name)    
+    
+
+    // var student = {
+    //     name:"Arfa karim",
+    //     age:23,
+    //     className: 3
+    // }
+        
+    //     function* info() {
+    //         yield "abc";
+    //         return "hello"
+    //     }
+    //     var get = info()
+    //     console.log(get.next())
+    //     console.log(get.next().value)
+        // console.log(get.next().value)
+
+    //     console.log("before Set time out")
+    // setTimeout(() => {
+    //     console.log("Set time out")
+    //     setTimeout(() => {
+    //         setTimeout(() => {
+    //             console.log("more nested")
+    //         },100)
+    //         console.log("nested")
+    //     },500)
+    // },1000)
+    //     console.log("after Set time out")
+
+    // var get = setTimeout(() => {
+    //             console.log("more nested")
+    // },1000)
+
+    // clearTimeout(get)
+
+    
+    // console.log("Hello")
+    // console.log("GET",get)
+
+
+//  let time = 5
+//   let get =  setInterval(() => {
+//         if(time <= 0) {
+//             clearInterval(get)
+//         }
+//         console.log("Interval")
+//         time--;
+//     }, 1000);
+
+let arr = [{name:'fahim',class:14,},{name:'ahmed',class:12}];
+var Data=arr.filter(x=>x.class>12)
+
+// var Data=[];
+// for (var i=0; i<arr.length; i++)
+// {
+//     if(arr[i]=='A')
+//     {
+//         Data.push(arr[i])
+//     }
+// }
+
+console.log(Data)
+
+
+
+
+
+    </script>
+</body>
+</html>
