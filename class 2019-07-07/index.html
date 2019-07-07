@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr = [1,2,3,4,2,3,1,4,5,6]
+        // var newArray = arr.filter((num, i , arr) => arr.indexOf(num) === i)
+        // console.log(newArray)
+
+
+
+        // function first(callback) {
+        //     setTimeout(() => {
+        //         console.log("first")
+        //         callback(third)
+        //     },3000)
+        // }
+        // function second(callback) {
+        //     setTimeout(() => {
+        //         console.log("second")
+        //         callback()
+        //     },2000)
+        // }
+        // function third() {
+        //     setTimeout(() => {
+        //         console.log("third")
+        //     },1000)
+        // }
+
+        // function first() {
+        //     return new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         resolve("first")
+        //     },3000)
+        //     })
+        // }
+        // function second() {
+        //     return new Promise((resolve,reject) => {
+        //     // setTimeout(() => {
+        //         let name = "Ali";
+        //         if(name) {
+        //             resolve(name)
+        //         } else {
+        //             reject("Error")
+        //         }
+                
+        //     // },2000)
+        //     })
+        // }
+        // function third() {
+        //     return new Promise((resolve,reject) => {
+        //     setTimeout(() => {
+        //         resolve("third")
+        //     },1000)
+        //     })
+        // }
+
+        // first()
+        // second()
+        // third()
+
+
+        // first(second)
+
+        // first().then(value => {
+        //     console.log(value)
+        //     return second()
+        // }).then(value => {
+        //     console.log(value)
+        //     return third()
+        // }).then(x => {
+        //     console.log(x);
+        // }).catch(error => console.log(error))
+
+        // Promise.all([first(),second(),third()]).then(value => 
+        // console.log(value)
+        //     ).catch(error => console.log(error))
+
+        
+        // async function getData() {
+        //     let firstData = await first()
+        //     console.log(firstData)
+        //     let secondData = await second()
+        //     console.log(secondData)
+        //     let thirdData = await third()
+        //     console.log(thirdData)
+        // }
+
+        // getData()
+
+
+            function getData(wait) {
+                setTimeout(() => {
+                    wait("Here is your data")
+                },3000)
+            }
+
+            function getValue() {
+                function wait(value) {
+                    console.log(value)
+                }
+
+
+                getData(wait)
+            
+            }
+
+            getValue();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
