@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var arr = [1,2,3,4,5]
+
+        // for(var i = 0; ; ){
+        //     setTimeout(function(){
+        //         console.log(i)
+        //     },1000) 
+        //     i++
+        //     if(i < arr.length){
+                
+        //     }
+        //     else {
+        //         break
+        //     }
+        // }
+
+        // var arr = [ {val : "a to b", time : 1000},
+        //             {val : "b to c", time : 2000},
+        //             {val : "c to d", time : 3000},
+        //             {val : "d to e", time : 6000},
+        //             {val : "e to f", time : 1000}
+        //         ]
+
+        // function loop (i = 0, arr) { 
+        //     if(i < arr.length){
+        //         setTimeout(function(){
+        //             console.log(arr[i].val)
+        //             loop(i+1, arr)
+        //         },arr[i].time) 
+        //     }
+        //     else {
+        //         return
+        //     }
+        // }
+
+        // loop(0, arr)
+
+
+
+        // console.log(arr[0])
+        // console.log(arr[1])
+        // console.log(arr[2])
+
+
+        
+        // setTimeout(function(){
+        //     for(var i = 0; i < arr.length; i++){
+        //         console.log(i)
+        //     }
+        // },1000) 
+        
+
+
+
+        // "a to d"
+
+        // "a to b" //1 sec
+        // "b to c" //1 sec
+        // "c to d" //1 sec
+
+
+
+        // function User () {
+        //     this.name = "Ali"
+        // }
+
+        // class User {
+        //     name  = "Ali"
+        //     constructor(name){
+        //         this.name = name
+        //     }
+
+        //     teaching(){
+        //         console.log(this.name + "is teaching")
+        //     }
+        // }
+
+        // var newUser = new User("Rehan")
+        // console.log(newUser)
+        // newUser.teaching()
+
+        class Human {
+            constructor(name){
+                this.name = name
+            }
+            sleeping(){
+                console.log(this.name + "is sleeping")
+            }
+            eating(){
+                console.log(this.name + "is eating")
+            }
+        }
+
+        class Teacher extends Human{
+            constructor(name){
+                super(name)                
+            }
+            teaching(){
+                console.log(this.name + " is teaching")
+            }
+            teachingOne(){
+                console.log(this.name + " is teaching")
+            }
+            
+            
+        }
+
+        class English_Teacher extends Teacher{
+            constructor(name){
+                super(name)                
+            }
+            teaching(){
+                console.log(this.name + " is teaching english")
+            }
+            
+        }
+
+
+        class Student extends Human {
+            constructor(name){
+                super(name)
+            }
+            studying(){
+                console.log(this.name + " is studying")
+            }
+        }
+
+        var newStudent = new Student("Rehan")
+        console.log(newStudent)
+
+        Math.random()
+
+        class Math {
+            static pi = "3.14"
+        }
+        Math.pi
+        
+    </script>
+</body>
+</html>
