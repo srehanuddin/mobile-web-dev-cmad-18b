@@ -4,7 +4,7 @@ class Header extends React.Component {
     render(){
         return(
             <div>
-                Header
+                Header {this.props.name123}
             </div>
         )
     }
